@@ -6,7 +6,7 @@ const app = express()
 
 app.get('/main', function(req,res){
 
-  fs.readFile(path.join(__dirname,'main.html'),function(err,data){
+  fs.readFile(path.join(__dirname,'index.html'),function(err,data){
     if(!err){
       res.end(data);
     }
